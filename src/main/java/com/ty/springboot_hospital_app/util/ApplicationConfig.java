@@ -1,4 +1,4 @@
-package com.ty.springboot_hospital_app.util;
+ package com.ty.springboot_hospital_app.util;
 
 import java.util.ArrayList;
 import java.util.List;

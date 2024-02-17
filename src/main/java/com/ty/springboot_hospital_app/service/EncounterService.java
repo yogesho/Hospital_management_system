@@ -14,7 +14,7 @@ import com.ty.springboot_hospital_app.dao.PersonDao;
 import com.ty.springboot_hospital_app.dto.Branch;
 import com.ty.springboot_hospital_app.dto.Encounter;
 import com.ty.springboot_hospital_app.dto.Person;
-import com.ty.springboot_hospital_app.service.exception.IdNotFoundException;
+import com.ty.springboot_hospital_app.exception.IdNotFoundException;
 import com.ty.springboot_hospital_app.util.ResponseStructure;
 
 @Service

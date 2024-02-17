@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +22,7 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
+@RequestMapping("/api")
 public class MedItemsController {
 
 	@Autowired
@@ -44,7 +46,7 @@ public class MedItemsController {
 		return service.updateMedItems(id, medItems);
 	}
 
-	@ApiOperation(value = "Delete MedItems", notes = "Api is used to delete meditems using meditems_id")
+	@ApiOperation(value = "Get MedItems", notes = "Api is used to Get meditems using meditems_id")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Successfully deleted"),
 			@ApiResponse(code = 404, message = "Id not found for meditems") })
 	@GetMapping("/meditems")
@@ -52,7 +54,7 @@ public class MedItemsController {
 		return service.getMedItemsById(id);
 	}
 
-	@ApiOperation(value = "Get MedItems By Id", notes = "Api is used to fetch meditems using meditems_id")
+	@ApiOperation(value = "Delete MedItems", notes = "Api is used to delete meditems using meditems_id")
 	@ApiResponses(value = { @ApiResponse(code = 302, message = "Successfully found"),
 			@ApiResponse(code = 404, message = "Id not found for meditems") })
 	@DeleteMapping("/meditems")

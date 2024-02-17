@@ -1,4 +1,4 @@
-package com.ty.springboot_hospital_app.service.exception;
+package com.ty.springboot_hospital_app.exception;
 
 import java.util.LinkedHashMap;
 import java.util.List;

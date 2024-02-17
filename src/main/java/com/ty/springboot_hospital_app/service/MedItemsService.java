@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.ty.springboot_hospital_app.dao.MedItemsDao;
 import com.ty.springboot_hospital_app.dto.MedItems;
-import com.ty.springboot_hospital_app.service.exception.IdNotFoundException;
+import com.ty.springboot_hospital_app.exception.IdNotFoundException;
 import com.ty.springboot_hospital_app.util.ResponseStructure;
 
 @Service
